@@ -1,0 +1,35 @@
+<div style="background-color: #fff;">
+    <div class="nav-bar card">
+        <div class="logo">
+            <img src="../../../assets/images/logo (1).png">
+        </div>
+    </div>
+</div>
+<div class="nav-links">
+    <div class="card">
+        <div class="link-wrapper">
+            <div class="link" [routerLink]="['/home']">HOME</div>
+            <div class="link">SERVICES</div>
+            <div class="link">BENEFITS</div>
+            <div class="link">SECURITY</div>
+            <div class="link">PAYMENT</div>
+            <div class="link">QUERIES / COMPLIMENTS</div>
+            <div class="link">HELP / FAQS</div>
+            <div class="link">CONTACT US</div>
+        </div>
+
+        <div class="link-wrapper">
+            <!-- register -->
+            <div class="link" [routerLink]="['/register']">REGISTER</div>
+            <div class="link" (click)="loginCardLink()">LOGIN &#9662;</div>
+            <div class="login-card" *ngIf="loginCardVisibility">
+                <app-login></app-login>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="newsPanel">
+    <marquee width="100%" direction="left" height="27px">
+        Welcome to our new e-Mintaka service.We are pleased to have you here. &nbsp;  &#160;&nbsp;  &#160;&nbsp;  &#160;&nbsp;  &#160;&nbsp;  &#160;&nbsp;  &#160; Welcome to our new e-Mintaka service.We are pleased to have you here.
+    </marquee>
+</div>

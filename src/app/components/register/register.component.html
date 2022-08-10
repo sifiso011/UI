@@ -1,0 +1,90 @@
+<app-navigation></app-navigation>
+<div class="form-card">
+
+  <div class="form-details">
+    <div class="title">Register</div>
+    <div class="detail-wrapper">
+      <span>
+        To complete the registration process you will need the following:
+        <br>
+        <ul class="description">
+          <li>Your SA ID number or valid Passport number.</li>
+          <li>Your personal details and a valid email address.</li>
+          <li>Read and accept the Terms and Conditions.</li>
+        </ul>
+      </span>
+    </div>
+  </div>
+
+  <form class="form">
+    <div class="card">
+      <label class="input-title">Username <span>*</span></label>
+      <div><input type="text" class="input-box input-mb"></div>
+    </div>
+
+    <div class="card">
+      <label class="input-title">Title <span>*</span></label>
+      <select name="cars" class="input-box input-mb" id="cars">
+        <option value="Mr">Mr</option>
+        <option value="Mrs">Mrs</option>
+        <option value="Dr">Dr</option>
+        <option value="Adv">Adv</option>
+      </select>
+
+      <label class="input-title">Name <span>*</span></label>
+      <div><input type="text" class="input-box input-mb"></div>
+
+      <label class="input-title">Surname <span>*</span></label>
+      <div><input type="text" class="input-box input-mb"></div>
+
+      <label class="input-title">Initials <span>*</span></label>
+      <div><input type="text" class="input-box input-mb"></div>
+    </div>
+
+    <div class="card">
+      <label class="input-title">Type of ID <span>*</span></label>
+      <select name="cars" [(ngModel)]="typeofid" class="input-box input-mb" id="cars">
+        <option value="southAfricanID">South African ID</option>
+        <option value="passportNumber">Passport Number</option>
+      </select>
+
+      <div *ngIf="typeofid == 'southAfricanID'">
+        <label class="input-title">Identification Number <span>*</span></label>
+        <div><input type="text" class="input-box input-mb"></div>
+      </div>
+
+      <div *ngIf="typeofid == 'passportNumber'">
+        <label class="input-title">Passport Number <span>*</span></label>
+        <div><input type="text" class="input-box input-mb"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <label class="input-title">Registration Preferred Contact <span>*</span></label>
+      <select name="cars" [(ngModel)]="registrationContact" class="input-box input-mb" id="cars">
+        <option value="sms">SMS</option>
+        <option value="email">Email</option>
+      </select>
+
+      <div *ngIf="registrationContact == 'sms'">
+        <label class="input-title">Mobile Number <span>*</span></label>
+        <div><input type="text" class="input-box input-mb"></div>
+      </div>
+
+      <div *ngIf="registrationContact == 'email'">
+        <label class="input-title">Email Address <span>*</span></label>
+        <div><input type="text" class="input-box input-mb"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <input type="checkbox" class="checkbox"><label class="input-title" style="margin-bottom: 0; margin-top: 1px;">Yes,
+        I agree to the Terms and Conditions.</label>
+
+      <div class="button-wrapper">
+        <button class="btn-form" [routerLink]="['/dashboard']">Register</button>
+        <button class="btn-form">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>

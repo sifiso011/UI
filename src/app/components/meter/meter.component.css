@@ -1,0 +1,91 @@
+.secRight{
+    width:200px;
+    border:1px solid black;
+    height:100vh;
+    float:right;
+   
+}
+
+nav.user-menu{
+    height:5px;
+    padding:5px;
+    margin-left:20px
+}
+.hdiv {
+  font-weight: 800 !important;
+  margin: 11px 15px !important;
+}
+
+.mHeading{
+margin-left:12px;
+}
+.sideIcon{
+    font-size:25px;
+    color:#837e7e !important;
+    background-color: #fff;
+    padding: 8px 0;
+    width: 42px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.table-content td{
+  border: none;
+}
+
+.quick .card{
+  padding: 16px;
+}
+
+
+.bg-secondary{
+  background-color: #837e7e;
+  color: #fff;
+}
+
+.pl-0{
+  padding-left: 0px!important;
+}
+.mt-1{
+  margin-top: 1rem;
+}
+
+.my-1{
+  margin: 1.4rem 0;;
+}
+.px-1{
+  padding: 0 .5rem;
+}
+.p-2{
+  padding: 8px;
+}
+.mt-3{
+  margin-top: 3rem;
+}
+.d-flex{
+  display: flex;
+}
+
+.left-data-account{
+  margin-left: 1rem;
+}
+
+.m-heading{
+  color: #000!important;
+  background-color: #837e7e;
+  padding: 8px;
+  text-align: center;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+.mt-8px{
+  margin-top: 8px;
+}
+
+.ul ul li{
+  list-style: none;
+  margin-top: 4px;
+}

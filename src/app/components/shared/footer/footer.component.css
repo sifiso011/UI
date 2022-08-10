@@ -1,0 +1,118 @@
+.card-container {
+    padding: 0 12%;
+}
+.arrow {
+    border: solid #e6b000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transition: all 50ms ease-in-out;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+footer {
+    border-bottom: 2px solid #e5af00;
+    background-color: #000;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer .card-wrapper {
+    display: flex;
+}
+footer .card {
+    padding: 0 15px;
+    width: 25%;
+}
+footer .card p {
+    color: #fff;
+    font-size: 14px;
+    margin: 0 0 10px;
+    line-height: 1.42857143;
+}
+footer .card-header {
+    margin-bottom: 15px;
+    padding-bottom: 9px;
+    border-bottom: 2px solid #fff;
+}
+footer .card-header h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 22px;
+    margin: 20px 0 10px;
+    font-weight: 500;
+}
+footer .footer-links {
+    background: none;
+    border: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+footer .footer-links label {
+    cursor: pointer;
+}
+footer .footer-links .link {
+    padding: 5px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #999;
+    color: #e6b000;
+    transition: all 50ms ease-in-out;
+}
+footer .footer-links .link:hover {
+    color: #fff;
+}
+footer .footer-links .link:hover .arrow {
+    border-color: #fff;
+}
+footer .input-group {
+    margin-bottom: 4px;
+    position: relative;
+    display: flex;
+    border-collapse: separate;
+}
+footer .input-group .input-group-addon {
+    border: 1px solid #e6b000;
+    width: 30px;
+    color: #fff;
+    padding: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    border-radius: 4px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+footer .input-group .btn-block {
+    border: 1px solid #e6b000;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 8px 6px;
+    color: #e6b000;
+    font-size: 14px;
+}
+.subfooter-wrapper {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.subfooter-wrapper span {
+    color: #e6b000;
+}
